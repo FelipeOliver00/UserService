@@ -18,5 +18,5 @@ public class Role {
     @Id
     @GeneratedValue(strategy = AUTO)
     private Long id;
-    private String nome;
+    private String name;
 }
