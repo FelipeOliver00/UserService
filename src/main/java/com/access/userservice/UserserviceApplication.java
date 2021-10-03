@@ -32,18 +32,16 @@ public class UserserviceApplication {
 			userService.saveRole(new Role(null, "ROLE_ADMIN"));
 			userService.saveRole(new Role(null, "ROLE_SUPER_ADMIN"));
 
-			userService.saveUser(new User(null, "Felipe", "felipe", "1234",new ArrayList<>()));
-			userService.saveUser(new User(null, "Arnold Schawrzenegger", "arnold", "1234",new ArrayList<>()));
-			userService.saveUser(new User(null, "Will Smith", "lenda", "1234",new ArrayList<>()));
-			userService.saveUser(new User(null, "Jim Carry", "jim", "1234",new ArrayList<>()));
+			userService.saveUser(new User(null, "Feli", "feli", "1234",new ArrayList<>()));
+			userService.saveUser(new User(null, "Alex", "alex", "1234",new ArrayList<>()));
+			userService.saveUser(new User(null, "Alef", "alef", "1234",new ArrayList<>()));
+			userService.saveUser(new User(null, "Bobs", "bobs", "1234",new ArrayList<>()));
 
-			userService.addRoleToUser("felipe","ROLE_USER");
-			userService.addRoleToUser("arnold","ROLE_MANAGER");
-			userService.addRoleToUser("lenda","ROLE_MANAGER");
-			userService.addRoleToUser("lenda","ROLE_ADMIN");
-			userService.addRoleToUser("jim","ROLE_SUPER_ADMIN");
-			userService.addRoleToUser("jim","ROLE_ADMIN");
-			userService.addRoleToUser("jim","ROLE_USER");
+			userService.addRoleToUser("feli","ROLE_USER");
+			userService.addRoleToUser("alex","ROLE_USER");
+			userService.addRoleToUser("alex","ROLE_MANAGER");
+			userService.addRoleToUser("alef","ROLE_ADMIN");
+			userService.addRoleToUser("bobs","ROLE_SUPER_ADMIN");
 
 		};
 	}
